@@ -21,6 +21,8 @@ class SafeZoneApp:
         self.create_view_reports_tab()
         self.create_admin_tab()
         
+        self.refresh_areas_comboboxes()
+        
         # We'll use a style for better look
         style = ttk.Style()
         if 'clam' in style.theme_names():
@@ -58,8 +60,6 @@ class SafeZoneApp:
         
         self.lbl_common_type = ttk.Label(self.summary_frame, text="Most Common Incident: --", font=("Helvetica", 12))
         self.lbl_common_type.pack(anchor="w", pady=5)
-        
-        self.refresh_areas_comboboxes()
 
     def create_explore_tab(self):
         self.tab_explore = ttk.Frame(self.notebook)
