@@ -1,4 +1,4 @@
-# SafeZone - Varsity Project
+# sdp200 - SafeZone Varsity Project
 
 SafeZone is a Python desktop application (built with Tkinter) connected to a MySQL database. It helps users search or select an area to view its safety level and report safety issues.
 
